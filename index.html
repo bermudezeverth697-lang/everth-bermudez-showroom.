@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone de Netflix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #141414;
+      color: #E5E5E5;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 5%;
+      background-color: rgba(20,20,20,0.8);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .navbar img.logo { height: 30px; }
+    .navbar .menu { display: flex; gap: 20px; }
+    .navbar .menu a { color: #E5E5E5; text-decoration: none; font-weight: bold; }
+    .hero {
+      height: 60vh;
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/565bd98a-41b0-4092-a2ef-5a82024df0c6/9930b7f6-eb26-4255-9af0-ecb76f8864c5/CO-es-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover;
+      display: flex; align-items: center; padding: 0 5%;
+    }
+    .hero .text { max-width: 500px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero button {
+      padding: 10px 20px; font-size: 1rem;
+      background-color: #e50914; border: none;
+      color: white; cursor: pointer; border-radius: 3px;
+    }
+    .section { padding: 20px 5%; }
+    .section h2 { margin-bottom: 10px; }
+    .cards {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px;
+    }
+    .card img {
+      width: 100%; border-radius: 5px;
+      cursor: pointer; transition: transform 0.3s;
+    }
+    .card img:hover { transform: scale(1.05); }
+    footer {
+      padding: 20px 5%; background-color: #141414;
+      text-align: center; font-size: 0.9rem; color: #737373;
+    }
+    footer a { color: #737373; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Logo">
+    <div class="menu">
+      <a href="#">Inicio</a><a href="#">Series</a><a href="#">Películas</a><a href="#">Novedades</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="text">
+      <h1>Disfruta donde quieras.</h1>
+      <p>Películas y series ilimitadas sin costo extra.</p>
+      <button>Ver Planes</button>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Populares en Colombia</h2>
+    <div class="cards">
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Pel%C3%ADcula+1" alt="Película 1"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Pel%C3%ADcula+2" alt="Película 2"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Pel%C3%ADcula+3" alt="Película 3"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Pel%C3%ADcula+4" alt="Película 4"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Pel%C3%ADcula+5" alt="Película 5"></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Recomendadas para ti</h2>
+    <div class="cards">
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Serie+1" alt="Serie 1"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Serie+2" alt="Serie 2"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Serie+3" alt="Serie 3"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Serie+4" alt="Serie 4"></div>
+      <div class="card"><img src="https://via.placeholder.com/150x225?text=Serie+5" alt="Serie 5"></div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Netflix, Inc.</p>
+    <p><a href="#">Servicio al Cliente</a> | <a href="#">Términos de Uso</a> | <a href="#">Privacidad</a></p>
+  </footer>
+</body>
+</html>
